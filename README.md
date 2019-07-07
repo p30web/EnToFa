@@ -29,3 +29,13 @@ jQuery(document).ready(function($){
 
 </script>`
 ```
+
+Functions : 
+
+- toFarsi : Convert English to Farsi
+- toEnglish : Convert Farsi to English
+- toHtml : Convert Farsi to Html
+
+Authe : Alireza Ahmadi 
+
+Support : forum.p30web.org
