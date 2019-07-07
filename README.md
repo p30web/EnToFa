@@ -1,13 +1,31 @@
 "# EnToFa" :
 
-<p  style=`direction: rtl;text-align: right;`>1) ابتدا فایل en_to_fa.js را بعد از فایل JQuery به کدهایتان اضافه کنید</p>
-مثال : 
+- Add en_to_fa.js `After` Jquery File
 
-<p><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></p>
-<p><script src="en_to_fa.js"></script></p>
+#Example ADD JS: 
+- `<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>`
+- `<script src="en_to_fa.js"></script>`
 
-سپس
+#Exampl Function usage : 
+```
+<script>
 
-- ![#fff](https://placehold.it/15/000/000000?text=+) `#fff`
-- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0`
+jQuery(document).ready(function($){
+  
+   var Price = $(".entry-summary .price").text()
+
+   var numbers = $.en2fa.toFarsi(Price);
+
+   $(".entry-summary .price").text(numbers);
+
+   $("li.product").each(function(){
+    //   var Price3 = $(".price").text();
+	var Price3 = $(this).find(".price").text()
+    var numbers3 = $.en2fa.toFarsi(Price3);
+	$(this).find(".price").text(numbers3);
+    });
+
+});
+
+</script>`
+```
