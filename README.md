@@ -4,9 +4,7 @@
 
 مثال : 
 
-<code>
 <p><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></p>
 <p><script src="en_to_fa.js"></script></p>
-</code>
 
 سپس
